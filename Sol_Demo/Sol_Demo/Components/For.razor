@@ -1,0 +1,8 @@
+﻿@typeparam T
+
+<div>
+    @foreach(T item in this.In ?? Array.Empty<T>()?.ToList())
+    {
+        @this?.ChildContent(item)
+    }
+</div>
